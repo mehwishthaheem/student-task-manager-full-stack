@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Student Task Manager</h2>
+        <ul>
+            <li>Home</li>
+            <li>Tasks</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Manage Your Tasks Easily</h1>
+        <p>Add, view, and delete your daily academic tasks in one place.</p>
+    </section>
+
+    <main class="container">
+        <section class="card form-section">
+            <h2>Add New Task</h2>
+
+            <input id="taskTitle" type="text" placeholder="Enter task title">
+
+            <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <section class="card">
+            <h2>Your Tasks</h2>
+            <ul id="taskList" class="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
